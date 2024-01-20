@@ -38,7 +38,7 @@ def bitcoin_thread():
 
 
 def timestamp():
-        return datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')
+        return datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')
 
 def list_verage(lst):
     return sum(lst) / len(lst) 
