@@ -13,7 +13,7 @@ spec:
         app: service-a
     spec:
       containers:
-      - name: servicea-container
+      - name: service-a-container
         image: your-container-registry/service-a:leatest
         ports:
         - containerPort: 5000
