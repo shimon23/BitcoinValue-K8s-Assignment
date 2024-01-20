@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: bitcoinvalueks 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bitcoinvalueks
+  template:
+    metadata:
+      labels:
+        app: bitcoinvalueks 
+    spec:
+      containers:
+        - name: bitcoinvalueks 
+          image: bitcoinvalue.azurecr.io/bitcoinvalueks
+          ports:
+          - containerPort: 5000
