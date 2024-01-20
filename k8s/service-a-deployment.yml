@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: servicea-container
-        image: your-container-registry/service-a:latest
+        image: your-container-registry/service-a:leatest
         ports:
         - containerPort: 5000
 ---
