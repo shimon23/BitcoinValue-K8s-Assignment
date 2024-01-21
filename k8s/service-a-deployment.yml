@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: service-a-container
-        image: your-container-registry/service-a:leatest
+        image: bitcoinvalue.azurecr.io/service-a:latest
         ports:
         - containerPort: 5000
 ---
