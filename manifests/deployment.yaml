@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: DeployFromGithub
+  labels:
+    app: DeployFromGithub
+  namespace: namespace-workflow-1705829253407
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: DeployFromGithub
+  template:
+    metadata:
+      labels:
+        app: DeployFromGithub
+    spec:
+      containers:
+        - name: DeployFromGithub
+          image: bitcoinvalue.azurecr.io/image-workflow-1705829253407:latest
+          ports:
+            - containerPort: 8000
