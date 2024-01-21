@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: service-a-container
-        image: bitcoinvalue.azurecr.io/service-a:latest
+        image: bitcoinvalue.azurecr.io/image-workflow-1705829253407:latest
         ports:
         - containerPort: 5000
 ---
